@@ -1,0 +1,38 @@
+# ==========================================
+# Requisiti Python per Benchmark Web ML
+# ==========================================
+
+# --- Core Machine Learning e Dati ---
+xgboost>=3.2.0
+scikit-learn>=1.8.0
+pandas>=3.0.1
+numpy>=2.4.3
+scipy>=1.17.1
+
+# --- Ecosistema ONNX ---
+onnx>=1.20.1
+onnxruntime>=1.24.4
+onnxmltools>=1.16.0
+
+# --- Ecosistema Treelite / WASM ---
+treelite>=4.7.0
+tl2cgen>=1.0.0
+# treelite-runtime>=3.9.1
+
+# --- Hyperparameter Tuning ---
+optuna>=4.8.0
+
+# --- Visualizzazione e Profilazione ---
+matplotlib>=3.10.8
+seaborn>=0.13.2
+plotly>=6.7.0
+memory-profiler>=0.61.0
+tqdm>=4.67.3
+psutil>=5.9.0
+
+# --- Automazione e Web Testing ---
+playwright>=1.40.0
+
+# --- Ambiente di Sviluppo ---
+jupyter>=1.0.0
+ipykernel>=7.2.0

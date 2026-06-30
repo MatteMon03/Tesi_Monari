@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Previsione Traffico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Previsione Traffico</h2>
+        
+        <div class="form-grid">
+            
+            <div class="input-group">
+                <label>Incrocio:</label>
+                <input type="number" id="val_junction" value="1" min="1" max="4">
+            </div>
+
+            <div class="input-group">
+                <label>Anno:</label>
+                <input type="number" id="val_year" value="2015" min="2015">
+            </div>
+
+            <div class="input-group">
+                <label>Mese:</label>
+                <input type="number" id="val_month" value="11" min="1" max="12">
+            </div>
+
+            <div class="input-group">
+                <label>Giorno:</label>
+                <input type="number" id="val_day" value="1" min="1" max="32">
+            </div>
+
+            <div class="input-group">
+                <label>Ora:</label>
+                <input type="number" id="val_hour" value="0" min="0" max="23">
+            </div>
+
+            <div class="input-group">
+                <label>Giorno Settimana:</label>
+                <input type="number" id="val_weekday" value="6" min="0" max="6">
+            </div>
+
+        </div>
+        <button onclick="faiPrevisione()">Calcola Traffico</button>
+        
+        <h3 id="risultato"></h3>
+    </div>
+
+    <script src="public/model.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

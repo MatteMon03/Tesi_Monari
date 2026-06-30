@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.onnx
+*.so
+*.json
+*.png
+*.csv
+public
+model_c_src
+emsdk
+*pkl

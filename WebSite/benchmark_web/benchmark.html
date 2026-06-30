@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Benchmark Modelli Web</title>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.16.3/dist/ort.webgpu.min.js"></script>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; max-width: 800px; margin: auto; }
+        .card { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; background-color: black; color: white; border: none; border-radius: 5px; }
+        button:disabled { background-color: #aaa; }
+        pre { background: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        .highlight { font-weight: bold; color: #d9534f; }
+    </style>
+</head>
+<body>
+
+    <h1>Web ML</h1>
+
+    <button id="runTestsBtn" onclick="runAllBenchmarks()">Avvia Test</button>
+    <div id="status" style="margin-top: 10px; font-weight: bold;">In attesa...</div>
+
+    <div class="card">
+        <h3> Modello in ambiente web con ONNX</h3>
+        <pre id="res-wasm">Nessun dato.</pre>
+    </div>
+
+    <div class="card">
+        <h3> Modello in ambiente web con ONNX con WebGPU</h3>
+        <pre id="res-webgpu">Nessun dato.</pre>
+    </div>
+
+    <div class="card">
+        <h3>Treelite</h3>
+        <pre id="res-treelite">Nessun dato.</pre>
+    </div>
+
+    <script src="benchmark.js"></script>
+    <script src="../public/model.js"></script>
+</body>
+</html>
